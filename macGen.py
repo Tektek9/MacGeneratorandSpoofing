@@ -84,6 +84,9 @@ try:
         print("6. Buat mac address berdasarkan VID")
         print("7. Spoofing manual")
         print("8. Spoofing otomatis")
+        print("Penggunaan: python3 macGen.py 1")
+        print("            python3 macGen.py 2")
+        print("            python3 macGen.py 3")
     elif sys.argv[1] == "1":
         c = wmi.WMI()
         print("\n")
