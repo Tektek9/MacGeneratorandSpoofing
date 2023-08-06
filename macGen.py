@@ -9,7 +9,6 @@ import sys
 
 lokasiiface = r"HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Class\\{4d36e972-e325-11ce-bfc1-08002be10318}"
 regexiface = re.compile("{.+}")
-regexkurawal = re.compile(r"([0-9A-Fa-f-]{17})")
 mac_address_regex = re.compile(r"([A-Z0-9]{2}[:-]){5}([A-Z0-9]{2})")
 
 def gaweMacRandom():
@@ -27,7 +26,7 @@ def ngrijikiMac(mac):
 
 def nyambungMac():
     nyambungadapterMac = []
-    for targetMac in subprocess.check_output("getmac").decode().splitlines():
+    for targetMac in subprocess.check_output("getmac /V").decode().splitlines():
         mac_address = mac_address_regex.search(targetMac)
         transport_name = regexiface.search(targetMac)
         if mac_address and transport_name:
