@@ -12,7 +12,7 @@ Fitur:
 - Mendapatkan VID Mac Address
 - Create Mac dari VID yang telah diinputkan
 - Spoofing manual dengan menginputkan mac
-- Spoofing otomatis dengan sudah termasuk auto generate mac address
+- Spoofing otomatis sudah termasuk auto generate mac address
 - Tersedia fitur auto correction apabila mac yang diinputkan formatnya tidak sesuai
 
 Salam Kuli :V
